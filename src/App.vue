@@ -31,7 +31,6 @@ body {
   font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: $color-white;
   background: $color-gray-dark;
   min-height: 100vh;
