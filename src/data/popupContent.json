@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "title": "Hier steht der Titel",
+    "description": "Hier steht die textuelle Beschreibung.",
+    "data": "Hier steht ein Ausschnitt der von Spotify gesammelten Daten."
+  },
+  {
+    "id": 1,
+    "title": "Hier steht der Titel",
+    "description": "Hier steht die textuelle Beschreibung.",
+    "data": "Hier steht ein Ausschnitt der von Spotify gesammelten Daten."
+  }
+]

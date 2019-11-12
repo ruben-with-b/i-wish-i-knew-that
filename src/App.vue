@@ -5,10 +5,23 @@
       <router-link to="/infographic">Infographic</router-link> |
       <router-link to="/solution">Solution</router-link> |
       <router-link to="/about">About</router-link> |
+      {{ numberOfItemsFound }} / {{ numberOfItems }}
     </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+
+export default {
+	computed: {
+		...mapGetters([
+			'numberOfItems', 'numberOfItemsFound'
+		])
+	}
+}
+</script>
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans&display=swap');
