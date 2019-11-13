@@ -7,7 +7,7 @@
     <svg-base position="absolute" fill="none" stroke="red" top="-5.2%" left="50%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
       <phone/>
     </svg-base>
-    <svg-base position="absolute" fill="#222" stroke="red" top="3%" left="67.75%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
+    <svg-base position="absolute" fill="#141414" stroke="red" top="3%" left="67.75%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
       <clock/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="white" top="4.5%" left="45%" :width="widthInPercent(50)" viewbox="0 0 50 52">

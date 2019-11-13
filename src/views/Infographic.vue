@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an infographic</h1>
+  <div class="wrapper about">
+    <h2>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.</h2>
     <DailyRoutine/>
   </div>
 </template>
