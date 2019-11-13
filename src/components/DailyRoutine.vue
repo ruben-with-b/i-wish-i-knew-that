@@ -13,7 +13,7 @@
     <svg-base position="absolute" fill="none" stroke="white" top="4.5%" left="45%" :width="widthInPercent(50)" viewbox="0 0 50 52">
       <cup/>
     </svg-base>
-    <svg-base position="absolute" fill="none" stroke="white" top="18%" left="28.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true">
+    <svg-base position="absolute" fill="none" stroke="white" top="18%" left="28.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
       <trees/>
     </svg-base>
   </div>
@@ -49,6 +49,28 @@ export default {
 		Cup,
 		Trees
 	},
+	mounted () {
+		const config = {
+			rootMargin: '-50px 0px',
+			threshold: [0, 0.25, 0.75, 1]
+		}
+
+		const images = document.querySelectorAll('.animate-me')
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.intersectionRatio > 0) {
+					entry.target.classList.add('show-up')
+				} else {
+					entry.target.classList.remove('show-up')
+				}
+			})
+		}, config)
+
+		images.forEach(image => {
+			observer.observe(image)
+		})
+	},
 	methods: {
 		widthInPercent (px) {
 			const onePercent = this.width / 100
@@ -71,5 +93,13 @@ export default {
   height: 100%;
   max-width: 1250px;
   position: relative;
+}
+
+.animate-me {
+	opacity: 0;
+	transition: opacity 0.5s ease;
+	&.show-up {
+		opacity: 1;
+	}
 }
 </style>

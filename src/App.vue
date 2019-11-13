@@ -8,7 +8,7 @@
       <li><router-link to="/solution">Reference</router-link></li>
       <li><router-link to="/about">About</router-link></li>
       </ul>
-      <div v-if="$route.name === 'infographic'" class="push">
+      <div v-if="$route.name === 'infographic'">
         {{ numberOfItemsFound }} / {{ numberOfItems }}
       </div>
     </div>
@@ -60,7 +60,6 @@ body {
 }
 
 #nav {
-
   #logo {
     font-weight: bold;
     margin-right: 5rem;
@@ -69,6 +68,7 @@ body {
   position: fixed;
   top: 0;
   display: flex;
+  justify-content: space-between;
   width: 100%;
   padding: 3rem 5rem;
 
@@ -89,10 +89,6 @@ body {
       color: $color-secondary;
     }
   }
-}
-
-.push {
-  margin-left: auto;
 }
 
 @mixin h1($color) {
