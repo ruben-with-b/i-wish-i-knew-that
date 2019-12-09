@@ -23,6 +23,11 @@ const routes = [
 		path: '/about',
 		name: 'about',
 		component: () => import('../views/About.vue')
+	},
+	{
+		path: '/wave',
+		name: 'wave',
+		component: () => import('../components/Wave.vue')
 	}
 ]
 
