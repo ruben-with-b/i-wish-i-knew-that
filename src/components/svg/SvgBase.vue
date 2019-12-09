@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss" scoped>
 svg {
-  transform: translate(-50%, 0);
+  // transform: translate(-50%, 0);
   display: inline-block;
   vertical-align: top;
   stroke-width: 3px;

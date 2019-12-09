@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="journey">
-    <svg-base position="relative" fill="none" stroke="white" left="50%" :width="widthInPercent(226)" viewbox="0 0 226 2722">
+    <svg-base position="relative" fill="none" stroke="white" :width="widthInPercent(275)" viewbox="0 0 293 2832.7">
       <journey/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="red" top="-5.2%" left="50%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
@@ -88,11 +88,13 @@ export default {
 
 <style lang="scss" scoped>
 .journey {
-  margin: 25rem auto 0 auto;
-  width: 100%;
-  height: 100%;
-  max-width: 1250px;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	margin: 25rem auto 0 auto;
+	width: 100%;
+	height: 100%;
+	max-width: 1250px;
+	position: relative;
 }
 
 .animate-me {
