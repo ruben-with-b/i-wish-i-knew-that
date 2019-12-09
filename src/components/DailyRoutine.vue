@@ -4,7 +4,7 @@
     <svg-base position="relative" fill="none" stroke="white" :width="widthInPercent(275)" viewbox="0 0 293 2832.7">
       <journey/>
     </svg-base>
-    <svg-base position="absolute" fill="none" stroke="red" top="-5.2%" left="50%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
+    <svg-base position="absolute" fill="none" stroke="red" top="-1.8%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
       <phone/>
     </svg-base>
     <svg-base position="absolute" fill="#141414" stroke="red" top="3%" left="67.75%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
