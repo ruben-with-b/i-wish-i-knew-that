@@ -10,7 +10,7 @@
     <svg-base position="absolute" fill="#141414" stroke="red" top="5.3%" left="65.3%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
       <clock/>
     </svg-base>
-    <svg-base position="absolute" fill="none" stroke="white" top="4.5%" left="45%" :width="widthInPercent(50)" viewbox="0 0 50 52">
+    <svg-base position="absolute" fill="none" stroke="white" top="7.4%" left="46.6%" :width="widthInPercent(50)" viewbox="0 0 52 50">
       <cup/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="white" top="18%" left="28.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
