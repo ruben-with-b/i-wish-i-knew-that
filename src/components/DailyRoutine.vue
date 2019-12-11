@@ -7,11 +7,29 @@
     <svg-base position="absolute" fill="none" stroke="red" top="-1.8%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
       <phone/>
     </svg-base>
+	<svg-base position="absolute" fill="none" stroke="red" top="2%" left="60%" :width="widthInPercent(16)" viewbox="0 0 20 19">
+      <heart/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="red" top="0.5%" left="20%" :width="widthInPercent(60)" viewbox="0 0 71 68">
+      <bubble/>
+    </svg-base>
     <svg-base position="absolute" fill="#141414" stroke="red" top="5.3%" left="65.3%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
       <clock/>
     </svg-base>
+	<svg-base position="absolute" fill="#141414" stroke="red" top="9.87%" left="61%" :width="widthInPercent(36)" viewbox="0 0 37 10">
+      <adapter/>
+    </svg-base>
     <svg-base position="absolute" fill="none" stroke="white" top="7.4%" left="46.6%" :width="widthInPercent(50)" viewbox="0 0 52 50">
       <cup/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="11.3%" left="54%" :width="widthInPercent(54)" viewbox="0 0 58 43">
+      <sun/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="12.4%" left="30%" :width="widthInPercent(84)" viewbox="0 0 96 96">
+      <music-boy/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="16%" left="38%" :width="widthInPercent(50)" viewbox="0 0 50 49">
+      <wlan/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="white" top="18%" left="28.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
       <trees/>
@@ -28,8 +46,14 @@ import Popup from '@/components/Popup.vue'
 import SvgBase from '@/components/svg/SvgBase.vue'
 import Journey from '@/components/svg/Path.vue'
 import Phone from '@/components/svg/Phone.vue'
-import Clock from '@/components/svg/Clock.vue'
 import Cup from '@/components/svg/Cup.vue'
+import Heart from '@/components/svg/Heart.vue'
+import Bubble from '@/components/svg/Bubble.vue'
+import Clock from '@/components/svg/Clock.vue'
+import Adapter from '@/components/svg/Adapter.vue'
+import Sun from '@/components/svg/Sun.vue'
+import MusicBoy from '@/components/svg/MusicBoy.vue'
+import Wlan from '@/components/svg/Wlan.vue'
 import Trees from '@/components/svg/Trees.vue'
 
 export default {
@@ -45,8 +69,14 @@ export default {
 		SvgBase,
 		Journey,
 		Phone,
+		Heart,
+		Bubble,
 		Clock,
+		Adapter,
 		Cup,
+		Sun,
+		MusicBoy,
+		Wlan,
 		Trees
 	},
 	mounted () {
