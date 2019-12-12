@@ -43,8 +43,38 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="23.5%" left="43%" :width="widthInPercent(85)" viewbox="0 0 86 110">
       <subway/>
     </svg-base>
-    <svg-base position="absolute" fill="none" stroke="white" top="22%" left="9.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
+    <svg-base position="absolute" fill="none" stroke="white" top="22%" left="9.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" class="animate-me">
       <trees/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="29%" left="55%" :width="widthInPercent(90)" viewbox="0 0 86 45" class="animate-me">
+      <bench/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="31.25%" left="22%" :width="widthInPercent(50)" viewbox="0 0 49 71">
+      <geo-pin/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="32%" left="45%" :width="widthInPercent(90)" viewbox="0 0 93 93" class="animate-me">
+      <music-girl/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="40%" left="39.5%" :width="widthInPercent(130)" viewbox="0 0 139 104" class="animate-me">
+      <desktop/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="40.6%" left="16%" :width="widthInPercent(400)" viewbox="0 0 417 147">
+      <desktop-deco/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="46.45%" left="20%" :width="widthInPercent(100)" viewbox="0 0 113 78">
+      <device-id/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="51%" left="47.4%" :width="widthInPercent(85)" viewbox="0 0 88 34">
+      <clicked/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="56.45%" left="21%" :width="widthInPercent(150)" viewbox="0 0 126 64">
+      <emoji/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="55.8%" left="44.5%" :width="widthInPercent(68)" viewbox="0 0 64 106">
+      <smartwatch/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="55%" left="60%" :width="widthInPercent(45)" viewbox="0 0 47 46">
+      <bubble-heart/>
     </svg-base>
   </div>
   <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(index)"/>
@@ -71,6 +101,16 @@ import RadioDeco from '@/components/svg/RadioDeco.vue'
 import RadioMast from '@/components/svg/RadioMast.vue'
 import Subway from '@/components/svg/Subway.vue'
 import Trees from '@/components/svg/Trees.vue'
+import Bench from '@/components/svg/Bench.vue'
+import GeoPin from '@/components/svg/GeoPin.vue'
+import MusicGirl from '@/components/svg/MusicGirl.vue'
+import Desktop from '@/components/svg/Desktop.vue'
+import DesktopDeco from '@/components/svg/DesktopDeco.vue'
+import DeviceId from '@/components/svg/DeviceId.vue'
+import Clicked from '@/components/svg/Clicked.vue'
+import Emoji from '@/components/svg/Emoji.vue'
+import Smartwatch from '@/components/svg/Smartwatch.vue'
+import BubbleHeart from '@/components/svg/BubbleHeart.vue'
 
 export default {
 	data () {
@@ -97,7 +137,17 @@ export default {
 		RadioDeco,
 		RadioMast,
 		Subway,
-		Trees
+		Trees,
+		Bench,
+		GeoPin,
+		MusicGirl,
+		Desktop,
+		DesktopDeco,
+		DeviceId,
+		Clicked,
+		Emoji,
+		Smartwatch,
+		BubbleHeart
 	},
 	mounted () {
 		const config = {
