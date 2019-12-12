@@ -7,16 +7,16 @@
     <svg-base position="absolute" fill="none" stroke="red" top="-1.8%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
       <phone/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="red" top="2%" left="60%" :width="widthInPercent(16)" viewbox="0 0 20 19">
+	<svg-base position="absolute" fill="#ffffff" stroke="#ffffff" top="2%" left="60%" :width="widthInPercent(16)" viewbox="0 0 20 19">
       <heart/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="red" top="0.5%" left="20%" :width="widthInPercent(60)" viewbox="0 0 71 68">
+	<svg-base position="absolute" fill="none" stroke="#ffffff" top="0.5%" left="20%" :width="widthInPercent(60)" viewbox="0 0 71 68">
       <bubble/>
     </svg-base>
     <svg-base position="absolute" fill="#141414" stroke="red" top="5.3%" left="65.3%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
       <clock/>
     </svg-base>
-	<svg-base position="absolute" fill="#141414" stroke="red" top="9.87%" left="61%" :width="widthInPercent(36)" viewbox="0 0 37 10">
+	<svg-base position="absolute" fill="#ffffff" stroke="none" top="9.87%" left="61%" :width="widthInPercent(36)" viewbox="0 0 37 10">
       <adapter/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="white" top="7.4%" left="46.6%" :width="widthInPercent(50)" viewbox="0 0 52 50">
@@ -25,13 +25,25 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="11.3%" left="54%" :width="widthInPercent(54)" viewbox="0 0 58 43">
       <sun/>
     </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="14%" left="53%" :width="widthInPercent(39)" viewbox="0 0 37 62">
+      <flowers/>
+    </svg-base>
 	<svg-base position="absolute" fill="none" stroke="white" top="12.4%" left="30%" :width="widthInPercent(84)" viewbox="0 0 96 96">
       <music-boy/>
     </svg-base>
 	<svg-base position="absolute" fill="none" stroke="white" top="16%" left="38%" :width="widthInPercent(50)" viewbox="0 0 50 49">
       <wlan/>
     </svg-base>
-    <svg-base position="absolute" fill="none" stroke="white" top="18%" left="28.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
+	<svg-base position="absolute" fill="none" stroke="white" top="16.5%" left="60%" :width="widthInPercent(170)" viewbox="0 0 171 123">
+      <radio-deco/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="16.7%" left="66%" :width="widthInPercent(50)" viewbox="0 0 51 100">
+      <radio-mast/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="23.5%" left="43%" :width="widthInPercent(85)" viewbox="0 0 86 110">
+      <subway/>
+    </svg-base>
+    <svg-base position="absolute" fill="none" stroke="white" top="22%" left="9.5%" :width="widthInPercent(252)" viewbox="0 0 252 190" :hideMobile="true" class="animate-me">
       <trees/>
     </svg-base>
   </div>
@@ -53,7 +65,11 @@ import Clock from '@/components/svg/Clock.vue'
 import Adapter from '@/components/svg/Adapter.vue'
 import Sun from '@/components/svg/Sun.vue'
 import MusicBoy from '@/components/svg/MusicBoy.vue'
+import Flowers from '@/components/svg/Flowers.vue'
 import Wlan from '@/components/svg/Wlan.vue'
+import RadioDeco from '@/components/svg/RadioDeco.vue'
+import RadioMast from '@/components/svg/RadioMast.vue'
+import Subway from '@/components/svg/Subway.vue'
 import Trees from '@/components/svg/Trees.vue'
 
 export default {
@@ -76,7 +92,11 @@ export default {
 		Cup,
 		Sun,
 		MusicBoy,
+		Flowers,
 		Wlan,
+		RadioDeco,
+		RadioMast,
+		Subway,
 		Trees
 	},
 	mounted () {
