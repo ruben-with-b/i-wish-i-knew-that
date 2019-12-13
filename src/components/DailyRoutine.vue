@@ -73,8 +73,41 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="55.8%" left="44.5%" :width="widthInPercent(68)" viewbox="0 0 64 106">
       <smartwatch/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="white" top="55%" left="60%" :width="widthInPercent(45)" viewbox="0 0 47 46">
+	<svg-base position="absolute" fill="none" stroke="white" top="54.5%" left="60%" :width="widthInPercent(45)" viewbox="0 0 47 46">
       <bubble-heart/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="55.85%" left="55%" :width="widthInPercent(220)" viewbox="0 0 202 88">
+      <music/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="61.3%" left="24.7%" :width="widthInPercent(70)" viewbox="0 0 71 80">
+      <playlist/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="62.6%" left="52%" :width="widthInPercent(200)" viewbox="0 0 200 76">
+      <sports-deco/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="70%" left="33%" :width="widthInPercent(220)" viewbox="0 0 253 88">
+      <smalltalk/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="70.5%" left="44.35%" :width="widthInPercent(68)" viewbox="0 0 66 59">
+      <voice/>
+    </svg-base>
+	<svg-base position="absolute" fill="none" stroke="white" top="75.2%" left="28.2%" :width="widthInPercent(180)" viewbox="0 0 162 63">
+      <share/>
+    </svg-base>
+	<svg-base position="absolute" fill="#141414" stroke="white" top="80%" left="39.62%" :width="widthInPercent(130)" viewbox="0 0 128 88">
+      <share-buttons/>
+    </svg-base>
+	<svg-base position="absolute" fill="#141414" stroke="white" top="83.5%" left="59%" :width="widthInPercent(50)" viewbox="0 0 45 51">
+      <moon/>
+    </svg-base>
+	<svg-base position="absolute" fill="#141414" stroke="white" top="85%" left="39.66%" :width="widthInPercent(130)" viewbox="0 0 133 185">
+      <tilt/>
+    </svg-base>
+	<svg-base position="absolute" fill="#141414" stroke="white" top="94.5%" left="43.3%" :width="widthInPercent(120)" viewbox="0 0 123 116">
+      <touch/>
+    </svg-base>
+	<svg-base position="absolute" fill="#FFFFFF" stroke="#FFFFFF" top="97%" left="36%" :width="widthInPercent(35)" viewbox="0 0 47 42">
+      <sleep/>
     </svg-base>
   </div>
   <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(index)"/>
@@ -111,6 +144,17 @@ import Clicked from '@/components/svg/Clicked.vue'
 import Emoji from '@/components/svg/Emoji.vue'
 import Smartwatch from '@/components/svg/Smartwatch.vue'
 import BubbleHeart from '@/components/svg/BubbleHeart.vue'
+import Music from '@/components/svg/Music.vue'
+import Playlist from '@/components/svg/Playlist.vue'
+import SportsDeco from '@/components/svg/SportsDeco.vue'
+import Smalltalk from '@/components/svg/Smalltalk.vue'
+import Voice from '@/components/svg/Voice.vue'
+import Share from '@/components/svg/Share.vue'
+import ShareButtons from '@/components/svg/ShareButtons.vue'
+import Moon from '@/components/svg/Moon.vue'
+import Tilt from '@/components/svg/Tilt.vue'
+import Touch from '@/components/svg/Touch.vue'
+import Sleep from '@/components/svg/Sleep.vue'
 
 export default {
 	data () {
@@ -147,7 +191,18 @@ export default {
 		Clicked,
 		Emoji,
 		Smartwatch,
-		BubbleHeart
+		BubbleHeart,
+		Music,
+		Playlist,
+		SportsDeco,
+		Smalltalk,
+		Voice,
+		Share,
+		ShareButtons,
+		Moon,
+		Tilt,
+		Touch,
+		Sleep
 	},
 	mounted () {
 		const config = {
