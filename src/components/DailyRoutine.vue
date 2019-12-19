@@ -73,7 +73,7 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="46.45%" left="20%" :width="widthInPercent(100)" viewbox="0 0 113 78">
       <device-id/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="white" top="51%" left="47.4%" :width="widthInPercent(85)" viewbox="0 0 88 34">
+	<svg-base position="absolute" fill="none" stroke="white" top="51%" left="47.4%" :width="widthInPercent(100)" viewbox="0 0 110 134">
       <clicked/>
     </svg-base>
 	<svg-base position="absolute" fill="#ffffff" stroke="#ffffff" top="53.5%" left="48.15%" :width="widthInPercent(22)" viewbox="0 0 30 30">
