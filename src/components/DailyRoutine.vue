@@ -55,7 +55,7 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="29%" left="55%" :width="widthInPercent(90)" viewbox="0 0 86 45" class="animate-me">
       <bench/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="white" top="31.25%" left="22%" :width="widthInPercent(50)" viewbox="0 0 49 71">
+	<svg-base position="absolute" fill="none" stroke="white" top="30.7%" left="22%" :width="widthInPercent(50)" viewbox="0 0 49 101">
       <geo-pin/>
     </svg-base>
 	<svg-base position="absolute" fill="none" stroke="white" top="32%" left="45%" :width="widthInPercent(90)" viewbox="0 0 93 93">

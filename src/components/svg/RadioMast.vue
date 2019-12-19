@@ -6,9 +6,55 @@
         <path d="M31,81 L13,72"></path>
         <path d="M19,75 L30,62"></path>
         <path d="M23,47.1180766 L23,20"></path>
-        <path d="M38,1 L39,1 C42.3137085,1 45,3.6862915 45,7 L45,7" transform="translate(41.500000, 4.000000) rotate(9.000000) translate(-41.500000, -4.000000) "></path>
-        <path d="M30,5 C34.9705627,5 39,9.02943725 39,14 L39,14" transform="translate(34.500000, 9.500000) rotate(4.000000) translate(-34.500000, -9.500000) "></path>
-        <path d="M0,2 L1,2 C4.3137085,2 7,4.6862915 7,8 L7,8" transform="translate(3.500000, 5.000000) rotate(-86.000000) translate(-3.500000, -5.000000) "></path>
-        <path d="M7,6 C11.9705627,6 16,10.0294373 16,15 L16,15" transform="translate(11.500000, 10.500000) rotate(-93.000000) translate(-11.500000, -10.500000) "></path>
+        <path ref="signalRight1" d="M38,1 L39,1 C42.3137085,1 45,3.6862915 45,7 L45,7" transform="translate(-6, 5) rotate(9)"></path>
+        <path ref="signalRight2" d="M30,5 C34.9705627,5 39,9.02943725 39,14 L39,14" transform="translate(0, 0) rotate(4.000000)"></path>
+        <path ref="signalLeft1" d="M0,2 L1,2 C4.3137085,2 7,4.6862915 7,8 L7,8" transform="translate(6.5, 11.5) rotate(-86.000000)"></path>
+        <path ref="signalLeft2" d="M7,6 C11.9705627,6 16,10.0294373 16,15 L16,15" transform="translate(0,10) rotate(-93.000000)"></path>
     </g>
 </template>
+
+<script>
+import { TweenMax, Power0 } from 'gsap'
+
+export default {
+	mounted () {
+		const { signalLeft1,
+			signalLeft2,
+			signalRight1,
+			signalRight2
+		} = this.$refs
+
+		TweenMax.to(signalRight1, 1.5, {
+			x: 5,
+			y: -5,
+			opacity: 0,
+			repeat: -1,
+			ease: Power0.easeNone
+		})
+
+		TweenMax.to(signalRight2, 1.5, {
+			x: 5,
+			y: -5,
+			opacity: 0,
+			repeat: -1,
+			ease: Power0.easeNone
+		})
+
+		TweenMax.to(signalLeft1, 1.5, {
+			x: -2,
+			y: 2,
+			opacity: 0,
+			repeat: -1,
+			ease: Power0.easeNone
+		})
+
+		TweenMax.to(signalLeft2, 1.5, {
+			x: -2,
+			y: 2,
+			opacity: 0,
+			repeat: -1,
+			ease: Power0.easeNone
+		})
+	}
+}
+</script>
