@@ -88,7 +88,7 @@
 	<svg-base position="absolute" fill="none" stroke="white" top="54.5%" left="60%" :width="widthInPercent(45)" viewbox="0 0 47 46" class="animate-me">
       <bubble-heart/>
     </svg-base>
-	<svg-base position="absolute" fill="none" stroke="white" top="55.85%" left="55%" :width="widthInPercent(220)" viewbox="0 0 202 88">
+	<svg-base position="absolute" fill="none" stroke="white" top="47.9%" left="51.4%" :width="widthInPercent(430)" viewbox="0 0 402 300">
       <music/>
     </svg-base>
 	<svg-base position="absolute" fill="none" stroke="white" top="61.3%" left="24.7%" :width="widthInPercent(70)" viewbox="0 0 71 80">
