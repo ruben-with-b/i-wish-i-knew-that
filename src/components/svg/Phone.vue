@@ -46,21 +46,3 @@
     100% { transform: translateY(0) }
 }
 </style>
-
-<script>
-import { TimelineMax } from 'gsap'
-
-export default {
-	data () {
-		return {
-			tl: new TimelineMax()
-		}
-	},
-	mounted () {
-		// const { wave } = this.$refs
-	},
-	methods: {
-
-	}
-}
-</script>

@@ -16,6 +16,61 @@ export default new Vuex.Store({
 				id: 1,
 				hidden: true,
 				spotted: false
+			},
+			{
+				id: 2,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 3,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 4,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 5,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 6,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 7,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 8,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 9,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 10,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 11,
+				hidden: true,
+				spotted: false
+			},
+			{
+				id: 12,
+				hidden: true,
+				spotted: false
 			}
 		]
 	},
