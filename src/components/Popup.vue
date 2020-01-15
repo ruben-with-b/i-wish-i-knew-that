@@ -5,7 +5,12 @@
   <button class="btn-primary left" type="button" @click="showDescription = true">description</button>
   <button class="btn-primary right" type="button" @click="showDescription = false">code snippets</button>
   <p v-if="showDescription">{{content.description}}</p>
-  <p v-else>{{content.data}}</p>
+  <p v-else>
+  { <br>
+    <span class="code-line"> {{content.data}} </span>
+    <br>
+  }
+  </p>
   <button class="btn-close" type="button" @click="togglePopup(content.id)">x</button>
 </div>
 </template>
@@ -76,5 +81,9 @@ export default {
     border-right: 0;
     border-left: 1px solid white;
   }
+}
+
+.code-line{
+  white-space: pre;
 }
 </style>
