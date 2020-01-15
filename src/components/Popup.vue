@@ -2,12 +2,12 @@
 <div v-if="!getPopupById(content.id).hidden" class="popup">
   <h3>#{{ content.id + 1 }} {{ content.title }}</h3>
   <hr/>
-  <button class="btn-primary left" type="button" @click="showDescription = true">description</button>
-  <button class="btn-primary right" type="button" @click="showDescription = false">code snippets</button>
-  <p v-if="showDescription">{{content.description}}</p>
-  <p v-else>
+  <button class="btn-primary left" type="button" @click="showDescription">description</button>
+  <button class="btn-primary right" type="button" @click="showCodeSnippet">code snippets</button>
+  <p v-if="description">{{content.description}}</p>
+  <p class="code-parag" v-else>
   { <br>
-    <span class="code-line"> {{content.data}} </span>
+    <span class="code-line" ref="codeLine"> {{content.data}} </span>
     <br>
   }
   </p>
@@ -17,11 +17,14 @@
 
 <script>
 import { mapGetters, mapMutations } from 'vuex'
+import ShuffleText from 'shuffle-text'
 
 export default {
 	data () {
 		return {
-			showDescription: true
+			description: true,
+			codeSnippet: false
+
 		}
 	},
 	props: ['content'],
@@ -31,6 +34,19 @@ export default {
 		])
 	},
 	methods: {
+		showDescription () {
+			this.description = true
+			this.codeSnippet = false
+		},
+		showCodeSnippet () {
+			this.description = false
+			this.codeSnippet = true
+			setTimeout(() => {
+				const text = new ShuffleText(this.$refs.codeLine)
+				// this.emptyCharacter = '*#+@≠¿';
+				text.start()
+			}, 50)
+		},
 		...mapMutations([
 			'togglePopup'
 		])
@@ -83,7 +99,12 @@ export default {
   }
 }
 
-.code-line{
-  white-space: pre;
+.code-parag{
+  overflow-x: hidden;
+
+  .code-line{
+    white-space: pre;
+  }
+
 }
 </style>
