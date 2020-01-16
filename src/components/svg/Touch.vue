@@ -31,3 +31,13 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+g{
+    fill: $background;
+
+    path{
+        fill: $background;
+    }
+}
+</style>

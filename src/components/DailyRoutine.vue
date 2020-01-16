@@ -109,19 +109,19 @@
 	<svg-base position="absolute" fill="none" stroke="red" top="75.2%" left="28.2%" :width="widthInPercent(180)" viewbox="0 0 162 63" :clickable="true" :popupId="10">
       <share/>
     </svg-base>
-	<svg-base position="absolute" fill="#141414" stroke="white" top="80%" left="39.62%" :width="widthInPercent(130)" viewbox="0 0 128 88">
+	<svg-base position="absolute" stroke="white" top="80%" left="39.62%" :width="widthInPercent(130)" viewbox="0 0 128 88">
       <share-buttons/>
     </svg-base>
-	<svg-base position="absolute" fill="#141414" stroke="white" top="83.5%" left="59%" :width="widthInPercent(50)" viewbox="0 0 45 51" class="animate-me">
+	<svg-base position="absolute" stroke="white" top="83.5%" left="59%" :width="widthInPercent(50)" viewbox="0 0 45 51" class="animate-me">
       <moon/>
     </svg-base>
-	<svg-base position="absolute" fill="#141414" stroke="red" top="85%" left="39.66%" :width="widthInPercent(130)" viewbox="0 0 133 185" :clickable="true" :popupId="11">
+	<svg-base position="absolute" stroke="red" top="85%" left="39.66%" :width="widthInPercent(130)" viewbox="0 0 133 185" :clickable="true" :popupId="11">
       <tilt/>
     </svg-base>
 	<svg-base position="absolute" fill="#ffffff" stroke="#ffffff" top="92.7%" left="48.15%" :width="widthInPercent(22)" viewbox="0 0 30 30">
       <point-in-time/>
     </svg-base>
-	<svg-base position="absolute" fill="#141414" stroke="red" top="94.5%" left="43.3%" :width="widthInPercent(120)" viewbox="0 0 123 116" :clickable="true" :popupId="12">
+	<svg-base position="absolute" stroke="red" top="94.5%" left="43.3%" :width="widthInPercent(120)" viewbox="0 0 123 116" :clickable="true" :popupId="12">
       <touch/>
     </svg-base>
 	<svg-base position="absolute" fill="#FFFFFF" stroke="#FFFFFF" top="97%" left="36%" :width="widthInPercent(35)" viewbox="0 0 47 42" class="animate-me">
