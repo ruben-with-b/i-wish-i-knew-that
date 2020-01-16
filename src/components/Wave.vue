@@ -53,7 +53,6 @@ export default {
 	},
 	mounted () {
 		this.shiftPercentage = 100 / this.numberOfItems
-		console.log(this.shiftPercentage)
 	},
 	methods: {
 		shiftWave () {
@@ -61,7 +60,6 @@ export default {
 			this.tl.progress(1) // avoid bug
 			this.tl.to(wave, 1.5, {
 				css: { height: '+=' + this.shiftPercentage + '%' },
-				transformOrigin: '0% 100%',
 				ease: Elastic.easeInOut
 			})
 		}
