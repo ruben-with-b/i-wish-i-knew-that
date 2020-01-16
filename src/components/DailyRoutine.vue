@@ -16,7 +16,7 @@
 	<svg-base position="absolute" fill="#ffffff" stroke="#ffffff" top="5%" left="48.15%" :width="widthInPercent(22)" viewbox="0 0 30 30">
       <point-in-time/>
     </svg-base>
-    <svg-base position="absolute" fill="#141414" stroke="red" top="5.3%" left="65.3%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
+    <svg-base position="absolute" stroke="red" top="5.3%" left="65.3%" :width="widthInPercent(76)" viewbox="0 0 76 74" :clickable="true" :popupId="1">
       <clock/>
     </svg-base>
 	<svg-base position="absolute" fill="#ffffff" stroke="none" top="9.87%" left="61%" :width="widthInPercent(36)" viewbox="0 0 37 10">

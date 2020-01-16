@@ -1,5 +1,5 @@
 <template>
-  <g id="Uhr" transform="translate(2, 2)">
+  <g transform="translate(2, 2)">
     <ellipse cx="36" cy="35" rx="36" ry="35"/>
     <line id="Kleiner-Zeiger" ref="littleHand" stroke-linecap="square" x1="36" y1="35" x2="45.9" y2="48.3"/>
     <line id="Großer-Zeiger" ref="bigHand" stroke-linecap="square" x1="36" y1="12.1" x2="36" y2="35"/>
@@ -28,3 +28,9 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+g{
+	fill: $background;
+}
+</style>

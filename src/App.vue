@@ -33,12 +33,6 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Space+Mono:400,700|Work+Sans&display=swap');
 
-$color-white: #fff;
-$color-gray-dark: #141414;
-
-$color-primary: #FF2943;
-$color-secondary: #762BFF;
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +40,7 @@ $color-secondary: #762BFF;
 }
 
 body {
-  background: $color-gray-dark;
+  background: $background;
 }
 
 #app {

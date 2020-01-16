@@ -28,9 +28,6 @@ export default {
 			'togglePopup',
 			'incrementItemsFound'
 		])
-	},
-	mounted () {
-
 	}
 }
 </script>
