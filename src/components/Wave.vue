@@ -1,6 +1,6 @@
 <template>
 	<div class="root">
-		<button>
+		<button @click="shiftWave">
 			Add point
 		</button>
 		<svg class="wave-container" xmlns="http://www.w3.org/2000/svg" width="100%" length="auto"
@@ -35,30 +35,36 @@
 
 <script>
 
-// import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters } from 'vuex'
 import { TimelineMax, Elastic } from 'gsap'
 
 export default {
 	data () {
 		return {
-			tl: new TimelineMax()
+			tl: new TimelineMax(),
+			shiftPercentage: undefined,
+			shiftDirection: undefined
 		}
 	},
+	computed: {
+		...mapGetters([
+			'numberOfItems', 'numberOfItemsFound'
+		])
+	},
 	mounted () {
-		const { wave } = this.$refs
-		let btn = document.querySelector('button')
-
-		btn.addEventListener('click', () => {
-			this.tl.progress(1) // avoid bug
-			this.tl.to(wave, 1.5, {
-				// pls replace by variable!
-				css: { height: '+=25%' },
-				transformOrigin: '0% 100%',
-				ease: Elastic.easeInOut })
-		})
+		this.shiftPercentage = 100 / this.numberOfItems
+		console.log(this.shiftPercentage)
 	},
 	methods: {
-
+		shiftWave () {
+			const { wave } = this.$refs
+			this.tl.progress(1) // avoid bug
+			this.tl.to(wave, 1.5, {
+				css: { height: '+=' + this.shiftPercentage + '%' },
+				transformOrigin: '0% 100%',
+				ease: Elastic.easeInOut
+			})
+		}
 	}
 }
 </script>
@@ -70,12 +76,14 @@ export default {
 	bottom: 0;
 	left: 0;
 	height: 0%;
+	transform: scaleY(2.1);
 	z-index: 150;
 }
 
 button{
-	position: absolute;
-	z-index: 300;
+	position: fixed;
+	z-index: 200;
+	bottom: 10em;
 }
 
 </style>

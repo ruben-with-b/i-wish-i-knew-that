@@ -135,6 +135,7 @@
 	<PartOfDay clock="#22:30" context="go to sleep" position="absolute"  top="92%" left="54%" textAlign="left" />
   </div>
   <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(index)"/>
+  <Wave/>
 </div>
 </template>
 
@@ -142,6 +143,7 @@
 import popupContent from '@/data/popupContent.json'
 import Popup from '@/components/Popup.vue'
 import PartOfDay from '@/components/PartOfDay.vue'
+import Wave from '@/components/Wave.vue'
 
 import SvgBase from '@/components/svg/SvgBase.vue'
 import Journey from '@/components/svg/Path.vue'
@@ -193,6 +195,7 @@ export default {
 	components: {
 		Popup,
 		PartOfDay,
+		Wave,
 		SvgBase,
 		Journey,
 		Phone,

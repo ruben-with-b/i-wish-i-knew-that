@@ -6,10 +6,9 @@
   <button class="btn-primary right" type="button" @click="showCodeSnippet">code snippets</button>
   <p v-if="description">{{content.description}}</p>
   <p class="code-parag" v-else>
-  { <br>
+    { <br>
     <span class="code-line" ref="codeLine"> {{content.data}} </span>
-    <br>
-  }
+    <br> }
   </p>
   <button class="btn-close" type="button" @click="togglePopup(content.id)">x</button>
 </div>
@@ -24,7 +23,6 @@ export default {
 		return {
 			description: true,
 			codeSnippet: false
-
 		}
 	},
 	props: ['content'],
