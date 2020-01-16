@@ -56,12 +56,14 @@ export default {
 	},
 	methods: {
 		shiftWave () {
-			const { wave } = this.$refs
-			this.tl.progress(1) // avoid bug
-			this.tl.to(wave, 1.5, {
-				css: { height: '+=' + this.shiftPercentage + '%' },
-				ease: Elastic.easeInOut
-			})
+			if (this.numberOfItemsFound !== this.numberOfItems) {
+				const { wave } = this.$refs
+				this.tl.progress(1) // avoid bug
+				this.tl.to(wave, 1.5, {
+					css: { height: '+=' + this.shiftPercentage + '%' }, // e.g. '+=5%'
+					ease: Elastic.easeInOut
+				})
+			}
 		}
 	}
 }
