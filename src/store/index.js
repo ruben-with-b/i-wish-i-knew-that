@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import { EventBus } from '@/bus/event-bus.js'
 
 Vue.use(Vuex)
 
@@ -81,6 +82,7 @@ export default new Vuex.Store({
 				if (!state.popups[id].spotted) {
 					state.popups[id].spotted = true
 					state.itemsFound++
+					EventBus.$emit('shift-the-wave')
 				}
 			}
 		}

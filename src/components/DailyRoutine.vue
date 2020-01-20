@@ -135,7 +135,7 @@
 	<PartOfDay clock="#22:30" context="go to sleep" position="absolute"  top="92%" left="54%" textAlign="left" />
   </div>
   <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(index)"/>
-  <Wave/>
+  <Wave class="wave"/>
 </div>
 </template>
 
@@ -281,6 +281,7 @@ export default {
 	height: 100%;
 	max-width: 1250px;
 	position: relative;
+	z-index: 10;
 }
 
 .animate-me {
@@ -289,5 +290,9 @@ export default {
 	&.show-up {
 		opacity: 1;
 	}
+}
+
+.wave{
+	z-index: -1;
 }
 </style>

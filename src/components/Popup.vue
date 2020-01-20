@@ -62,6 +62,7 @@ export default {
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 800px;
+    z-index: 20;
   }
 
   hr {

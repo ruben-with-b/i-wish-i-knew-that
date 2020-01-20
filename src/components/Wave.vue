@@ -1,8 +1,5 @@
 <template>
 	<div class="root">
-		<button @click="shiftWave">
-			Add point
-		</button>
 		<svg class="wave-container" xmlns="http://www.w3.org/2000/svg" width="100%" length="auto"
 			ref="wave" viewBox="0 0 1923.478 2179.665" preserveAspectRatio="none">
 			<path id="waveInAction" transform="translate(0 700)" fill="#6aeb1a">
@@ -34,7 +31,7 @@
 </template>
 
 <script>
-
+import { EventBus } from '@/bus/event-bus.js'
 import { mapGetters } from 'vuex'
 import { TimelineMax, Elastic } from 'gsap'
 
@@ -53,6 +50,9 @@ export default {
 	},
 	mounted () {
 		this.shiftPercentage = 100 / this.numberOfItems
+		EventBus.$on('shift-the-wave', () => {
+			this.shiftWave()
+		})
 	},
 	methods: {
 		shiftWave () {
@@ -77,7 +77,7 @@ export default {
 	left: 0;
 	height: 0%;
 	transform: scaleY(2.1);
-	z-index: 150;
+	opacity: .2;
 }
 
 button{

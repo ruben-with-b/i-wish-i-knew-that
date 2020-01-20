@@ -46,25 +46,25 @@
 	{
 		"id": 5,
 		"title": "Device Information",
-		"description": "Hier steht die textuelle Beschreibung.",
+		"description": "Further data such as the ID or the operating system belong to the technical data collections of Spotify.",
 		"data": {}
 	},
 	{
 		"id": 6,
-		"title": "Hier steht der Titel",
-		"description": "Hier steht die textuelle Beschreibung.",
+		"title": "Click Interactions",
+		"description": "While Spotify recognizes the device information, click interactions can also be saved. Through the data motion sensors, Spotify captures your interactions.",
 		"data": {}
 	},
 	{
 		"id": 7,
-		"title": "Hier steht der Titel",
-		"description": "Hier steht die textuelle Beschreibung.",
+		"title": "Feelings & Emotions",
+		"description": "Did you know that besides data, emotions can also be stored? Whether you're listening to a happy or a sad song, Spotify can map your mood.",
 		"data": {}
 	},
 	{
 		"id": 8,
-		"title": "Hier steht der Titel",
-		"description": "Hier steht die textuelle Beschreibung.",
+		"title": "Accessory",
+		"description": "By intercepting data, Spotify can also recognize the brand of your terminal. For example the brand of your headphones.",
 		"data": {}
 	},
 	{
