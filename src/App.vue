@@ -59,6 +59,7 @@ body {
     margin-right: 5rem;
   }
 
+  z-index: 9999;
   position: fixed;
   top: 0;
   display: flex;

@@ -1,80 +1,104 @@
 [
-  {
-    "id": 0,
-    "title": "Login & Logout",
-    "description": "Once you logged in Spotify collects your user data and stores things of a demographic nature or e.g. the time you dwelled on Spotify. The amount of registration data varies dependend on the registration type, third party accounts (like facebook) facilitate the gathering of even more data.",
-    "data": "\"session_time\": \"1148395\""
-  },
-  {
-    "id": 1,
-    "title": "Time",
-    "description": "Date and time are important indicators for Spotify not only during streaming their service but also beyond the use of Spotify. For example the time your computer has been running since the last boot is also tracked.",
-    "data": "\"system_up_time_awake_seconds\": \"167.406989\""
-  },
-  {
-    "id": 2,
-    "title": "Network Quality",
-    "description": "When you're on the go even network qualities are inspected and stored. Spotify detects which generation of network you are using.",
-    "data": "\"low_bitrate_on_cellular\": \"true\", \n  \"bitrate\": \"32000\", \n  \"cdn_64k_initial_latency\": \"-1\", \n  \"connection_type_end\": \"4g\""
-  },
-  {
-    "id": 3,
-    "title": "Location",
-    "description": "If you have turned off your location, Spotify still can allocate you to an approximate location. The IP address of your digital device can be used to find it out.",
-    "data": "\"identData_ip_addr_decrypted\": \"91.34.99.x\""
-  },
-  {
-    "id": 4,
-    "title": "Canvas Size",
-    "description": "Another technical data that is collected by Spotify is the canvas size of the wep app.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"mac_app_screen_scale_factor\": \"2.0\""
-  },
-  {
-    "id": 5,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\""
-  },
-  {
-    "id": 6,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 7,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 8,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 9,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 10,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 11,
-    "title": "Device orientation",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_device_orientation\": \"1\""
-  },
-  {
-    "id": 12,
-    "title": "Hier steht der Titel",
-    "description": "Hier steht die textuelle Beschreibung.",
-    "data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
-  }
+	{
+		"id": 0,
+		"title": "Login & Logout",
+		"description": "Once you logged in Spotify collects your user data and stores things of a demographic nature or e.g. the time you dwelled on Spotify. The amount of registration data varies dependend on the registration type, third party accounts (like facebook) facilitate the gathering of even more data.",
+		"data": "\"session_time\": \"1148395\""
+	},
+	{
+		"id": 1,
+		"title": "Time",
+		"description": "Date and time are important indicators for Spotify not only during streaming their service but also beyond the use of Spotify. For example the time your computer has been running since the last boot is also tracked.",
+		"data": "\"system_up_time_awake_seconds\": \"167.406989\""
+	},
+	{
+		"id": 2,
+		"title": "Network Quality",
+		"description": "When you're on the go even network qualities are inspected and stored. Spotify detects which generation of network you are using.",
+		"data": "\"low_bitrate_on_cellular\": \"true\", \n  \"bitrate\": \"32000\", \n  \"cdn_64k_initial_latency\": \"-1\", \n  \"connection_type_end\": \"4g\""
+	},
+	{
+		"id": 3,
+		"title": "Location",
+		"description": "If you have turned off your location, Spotify still can allocate you to an approximate location. The IP address of your digital device can be used to find it out.",
+		"data": "\"identData_ip_addr_decrypted\": \"91.34.99.x\""
+	},
+	{
+		"id": 4,
+		"title": "Canvas Size",
+		"description": "Another technical data that is collected by Spotify is the canvas size of the wep app.",
+		"data": "\"average_scale_factor\": \"-1\", \n  \"mac_app_screen_scale_factor\": \"2.0\""
+	},
+	{
+		"id": 5,
+		"title": "Hier steht der Titel",
+		"description": "Hier steht die textuelle Beschreibung.",
+		"data": "\"average_scale_factor\": \"-1\""
+	},
+	{
+		"id": 6,
+		"title": "Hier steht der Titel",
+		"description": "Hier steht die textuelle Beschreibung.",
+		"data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
+	},
+	{
+		"id": 7,
+		"title": "Hier steht der Titel",
+		"description": "Hier steht die textuelle Beschreibung.",
+		"data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
+	},
+	{
+		"id": 8,
+		"title": "Hier steht der Titel",
+		"description": "Hier steht die textuelle Beschreibung.",
+		"data": "\"average_scale_factor\": \"-1\", \n  \"average_device_orientation\": \"1\""
+	},
+	{
+		"id": 9,
+		"title": "Share",
+		"description": "Spotify remembers it every time you share a song, album, or artist with your friends. For example, it is recorded with what intent you share the content or whether you changed the placeholder text when sending it.",
+		"data": {
+			"message_user_intent": "share-copy-link",
+			"timestamp_utc": "2019-03-18 15:17:03 UTC",
+			"interaction_type": "hit",
+			"result": "success",
+			"message_uri_decrypted": "spotify:album:2jd0syXer1txxASx3W2oy0",
+			"text_changed": true,
+			"type": "link-share",
+			"user_intent": "share-copy-link"
+		}
+	},
+	{
+		"id": 10,
+		"title": "Social",
+		"description": "If you allow certain settings, Spotify can also access your entire contact list. On Facebook, Spotify even has access to your friends' pictures and names.",
+		"data": {}
+	},
+	{
+		"id": 11,
+		"title": "Device orientation",
+		"description": "In certain situations, Spotify remembers the orientation of your device. The value -1 stands for the horizontal alignment of your phone. 0 means that you held your phone in portrait mode.",
+		"data": {
+			"average_scale_factor": -1,
+			"timestamp_utc": "2019-05-02 07:45:33 UTC",
+			"exit_reason": "shutdown",
+			"connection_type_end": "4g",
+			"ms_duration": "6966",
+			"average_device_orientation": -1,
+			"connection_type_start": "4g",
+			"ms_played": "13784",
+			"aspect_ratio": 0
+		}
+	},
+	{
+		"id": 12,
+		"title": "User Interface Interaction",
+		"description": "In addition to the orientation of your phone, every touchscreen interaction is recorded. A distinction is made between the input methods hit, drag and swipe. It also records what the goal of the interaction was.",
+		"data": {
+			"timestamp_utc": "2019-05-29 06:43:59 UTC",
+			"interaction_type": "swipe",
+			"message_pageuri_decrypted": "spotify:now-playing",
+			"user_intent": "close"
+		}
+	}
 ]

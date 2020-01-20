@@ -4,11 +4,9 @@
   <hr/>
   <button class="btn-primary left" type="button" @click="showDescription">description</button>
   <button class="btn-primary right" type="button" @click="showCodeSnippet">code snippets</button>
-  <p v-if="description">{{content.description}}</p>
-  <p class="code-parag" v-else>
-    { <br>
+  <p v-show="description">{{content.description}}</p>
+  <p v-show="codeSnippet" class="code-parag">
     <span class="code-line" ref="codeLine"> {{content.data}} </span>
-    <br> }
   </p>
   <button class="btn-close" type="button" @click="togglePopup(content.id)">x</button>
 </div>
@@ -39,11 +37,8 @@ export default {
 		showCodeSnippet () {
 			this.description = false
 			this.codeSnippet = true
-			setTimeout(() => {
-				const text = new ShuffleText(this.$refs.codeLine)
-				// this.emptyCharacter = '*#+@≠¿';
-				text.start()
-			}, 50)
+			const text = new ShuffleText(this.$refs.codeLine)
+			text.start()
 		},
 		...mapMutations([
 			'togglePopup'
