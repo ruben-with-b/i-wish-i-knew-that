@@ -86,57 +86,26 @@ body {
   }
 }
 
-@mixin h1($color) {
-  font-family: 'Space Mono', monospace;
-  font-size: 11rem;
-  line-height: 10rem;
-}
-
-@mixin h2($color) {
-  font-family: 'Space Mono', monospace;
-  font-size: 4.5rem;
-  line-height: 5.5rem;
-}
-
-@mixin h3($color) {
-  font-family: 'Space Mono', monospace;
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-@mixin h4($color) {
-  font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-}
-
-@mixin p($color) {
-  font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 2rem;
-}
-
 h1 {
-  @include h1(black);
+  @include h1($color-white);
   margin-bottom: 6rem;
 }
 
 h2 {
-  @include h2(black);
+  @include h2($color-white);
   width: 75%;
 }
 
 h3 {
-  @include h3(black);
+  @include h3($color-white);
 }
 
 h4 {
-  @include h4(black);
+  @include h4($color-white);
 }
 
 p {
-  @include p(black);
+  @include p($color-white);
   margin-bottom: 2rem;
 }
 

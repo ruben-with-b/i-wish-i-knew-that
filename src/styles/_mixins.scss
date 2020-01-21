@@ -1,0 +1,35 @@
+@mixin h1($color) {
+  color: $color;
+  font-family: 'Space Mono', monospace;
+  font-size: 11rem;
+  line-height: 10rem;
+}
+
+@mixin h2($color) {
+  color: $color;
+  font-family: 'Space Mono', monospace;
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+}
+
+@mixin h3($color) {
+  color: $color;
+  font-family: 'Space Mono', monospace;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+@mixin h4($color) {
+  color: $color;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+@mixin p($color) {
+  color: $color;
+  font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2rem;
+}
