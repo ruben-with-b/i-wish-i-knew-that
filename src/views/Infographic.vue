@@ -77,7 +77,7 @@ export default {
 }
 
 .progress-bar {
-	@include h5($color-white);
+	@include h5($color-gray-dark);
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -87,7 +87,7 @@ export default {
 	height: 4.5rem;
 	bottom: 0;
 	left: 0;
-	background: $color-primary;
+	background: $color-secondary;
 	transition: width 0.2s ease;
 
 	span {

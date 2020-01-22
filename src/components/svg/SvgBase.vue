@@ -43,7 +43,7 @@ svg {
   }
   g {
     &.is-spotted {
-      stroke: blue;
+      stroke: #1ED760;
     }
   }
 }
