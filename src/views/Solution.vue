@@ -19,7 +19,25 @@ import Button from '@/components/Button.vue'
 export default {
 	data () {
 		return {
-			value: 'Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben. '
+			value: `Hello,
+
+In accordance with Article 17 of the European General Data Protection Regulation, please proceed to the erasure of my personal data without undue delay.
+
+- Account information, including my name, date of birth, e-mail address, billing/shipping address, phone number, and stored payment card data.
+- User-generated content, which may include things such as photos, tracked activities, statistics, comments, or messages. 
+- Store or Site Data, which may include information on past orders, product reviews, comments in forums, comments on website content.
+- Customer Service Contacts, if I have contacted customer service in the past to resolve any issues, any contact history. 
+- Marketing tracking or behavior data, which may include things such as open and click rate, website user behavior, browser user agent, user preferences, inferred user behavior, etc.
+
+Accounts may be associated with the following login credentials.
+
+Email addresses: [list your email addresses]
+Phone number: [list your email phone numbers]
+User name: [list your user names]
+
+Please confirm when this operation has been completed.
+
+Best regards, [your name]`
 		}
 	},
 	components: {
@@ -51,7 +69,7 @@ h4 {
   background: transparent;
   border: $border;
   width: 100%;
-  height: 15rem;
+  height: 23rem;
   padding: 1.5rem 2rem;
   display: block;
   margin-bottom: 3rem;

@@ -6,7 +6,8 @@
   <button class="btn-primary right" type="button" @click="showCodeSnippet">code snippets</button>
   <p v-show="description">{{content.description}}</p>
   <p v-show="codeSnippet" class="code-parag">
-    <span class="code-line" ref="codeLine"> {{content.data}} </span>
+    <span v-if="content.data" class="code-line" ref="codeLine"></span>
+    <span v-else>No data available – sorry for that!</span>
   </p>
   <button class="btn-close" type="button" @click="togglePopup(content.id)">x</button>
 </div>

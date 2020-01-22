@@ -47,25 +47,25 @@
 		"id": 5,
 		"title": "Device Information",
 		"description": "Further data such as the ID or the operating system belong to the technical data collections of Spotify.",
-		"data": {}
+		"data": null
 	},
 	{
 		"id": 6,
 		"title": "Click Interactions",
 		"description": "While Spotify recognizes the device information, click interactions can also be saved. Through the data motion sensors, Spotify captures your interactions.",
-		"data": {}
+		"data": null
 	},
 	{
 		"id": 7,
 		"title": "Feelings & Emotions",
 		"description": "Did you know that besides data, emotions can also be stored? Whether you're listening to a happy or a sad song, Spotify can map your mood.",
-		"data": {}
+		"data": null
 	},
 	{
 		"id": 8,
 		"title": "Accessory",
 		"description": "By intercepting data, Spotify can also recognize the brand of your terminal. For example the brand of your headphones.",
-		"data": {}
+		"data": null
 	},
 	{
 		"id": 9,
@@ -86,7 +86,7 @@
 		"id": 10,
 		"title": "Social",
 		"description": "If you allow certain settings, Spotify can also access your entire contact list. On Facebook, Spotify even has access to your friends' pictures and names.",
-		"data": {}
+		"data": null
 	},
 	{
 		"id": 11,

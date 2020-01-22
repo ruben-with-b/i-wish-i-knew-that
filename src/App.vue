@@ -3,7 +3,7 @@
     <div id="nav">
       <ul>
       <li><router-link id="logo" to="/">iwishiknewthat / spotify</router-link></li>
-      <li><router-link to="/">Manual</router-link></li>
+      <!-- <li><router-link to="/">Manual</router-link></li> -->
       <li><router-link to="/infographic">Infographic</router-link></li>
       <li><router-link to="/solution">Reference</router-link></li>
       <li><router-link to="/about">About</router-link></li>
@@ -126,7 +126,6 @@ p {
 
 hr {
   border: 1px dashed white;
-  width: 40%;
   margin: 5rem 0;
 }
 
