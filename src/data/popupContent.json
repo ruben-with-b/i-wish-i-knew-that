@@ -20,7 +20,7 @@
 		"title": "Network Quality",
 		"description": "When you're on the go even network qualities are inspected and stored. Spotify detects which generation of network you are using.",
 		"data": {
-			"low_bitrate_on_cellular": "true",
+			"low_bitrate_on_cellular": true,
 			"bitrate": "32000",
 			"cdn_64k_initial_latency": "-1",
 			"connection_type_end": "4g"
@@ -46,26 +46,57 @@
 	{
 		"id": 5,
 		"title": "Device Information",
-		"description": "Further data such as the ID or the operating system belong to the technical data collections of Spotify.",
-		"data": null
+		"description": "The Spotify application can extract pretty much information out of the devices that are streaming the music.",
+		"data": {
+			"mac_computer_model": "MacBookPro11,5",
+			"os_platform": "Mac",
+			"screen_model_name": "DELL U3415W",
+			"disk_capacity_bytes": "256060514304",
+			"mac_cpu_product_name": "Intel(R) Core(TM) i7-4980HQ CPU @ 2.80GHz",
+			"cpu_is_64_bit_capable": true,
+			"has_touch_screen": true,
+			"has_touchpad": false,
+			"computer_is_currently_running_on_battery_power": true
+		}
 	},
 	{
 		"id": 6,
 		"title": "Click Interactions",
-		"description": "While Spotify recognizes the device information, click interactions can also be saved. Through the data motion sensors, Spotify captures your interactions.",
-		"data": null
+		"description": "Spotify is able to capture and store your click interactions. It could be important for them to know which song was skipped or ad was clicked.",
+		"data": {
+			"ad_clicked": true,
+			"skipped": false,
+			"click_type": "close_icon"
+		}
 	},
 	{
 		"id": 7,
 		"title": "Feelings & Emotions",
-		"description": "Did you know that besides data, emotions can also be stored? Whether you're listening to a happy or a sad song, Spotify can map your mood.",
-		"data": null
+		"description": "Did you know that besides data, emotions can also be stored? Whether you're listening to a happy or a sad song, Spotify can map your mood. According to their Web API reference, each song is described by its mood.",
+		"data": {
+			"danceability": 0.735,
+			"energy": 0.578,
+			"loudness": -11.84,
+			"speechiness": 0.0461,
+			"acousticness": 0.514,
+			"instrumentalness": 0.0902,
+			"liveness": 0.159,
+			"tempo": 98.002
+		}
 	},
 	{
 		"id": 8,
 		"title": "Accessory",
-		"description": "By intercepting data, Spotify can also recognize the brand of your terminal. For example the brand of your headphones.",
-		"data": null
+		"description": "Once you plug in your personal accessory it is dead easy for Spotify to acquire information about it. For example the brand of your headphones.",
+		"data": {
+			"company": "bose",
+			"mac_default_audio_output_device_terminal_type": "Headphones",
+			"bluetooth_version_string": "Bluetooth Core Specification 4.0",
+			"category": "wearable",
+			"version": "watchOS 5.2",
+			"integration_type": "watchconnectivity",
+			"message_name_decrypted": "Apple\u00a0Watch from John"
+		}
 	},
 	{
 		"id": 9,
@@ -112,7 +143,8 @@
 			"timestamp_utc": "2019-05-29 06:43:59 UTC",
 			"interaction_type": "swipe",
 			"message_pageuri_decrypted": "spotify:now-playing",
-			"user_intent": "close"
+			"user_intent": "close",
+			"tap_location": "Button_1"
 		}
 	}
 ]
