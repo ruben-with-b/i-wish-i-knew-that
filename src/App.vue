@@ -43,6 +43,10 @@ body {
   background: $background;
 }
 
+button{
+  cursor: pointer;
+}
+
 #app {
   font-family: 'Work Sans', 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -59,6 +63,7 @@ body {
     margin-right: 5rem;
   }
 
+  background: $background;
   z-index: 9999;
   position: fixed;
   top: 0;
@@ -118,6 +123,7 @@ p {
     width: 50%;
     border: 2px solid white;
     background: transparent;
+    cursor: pointer;
   }
 
 .wrapper {

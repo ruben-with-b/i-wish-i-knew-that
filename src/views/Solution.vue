@@ -7,7 +7,11 @@
       <p>Copy the text and request your data.</p>
       <textarea v-model="value" class="mail"></textarea>
       <div class="btn-group">
-        <Button aria="copy" title="copy text" @click.native="copyText"/><a href="mailto:privacy@spotify.com"><Button aria="send" title="to mail"/></a>
+        <Button aria="copy" title="copy text" @click.native="copyText"/>
+        <a href="mailto:privacy@spotify.com">
+          <Button aria="send" title="to mail"/>
+        </a>
+        <div v-if="success" class="success">Mail text has been coppied to clipboard!</div>
       </div>
     </div>
   </div>
@@ -20,6 +24,7 @@ import Button from '@/components/Button.vue'
 export default {
 	data () {
 		return {
+			success: false,
 			value: `Hello,
 
 In accordance with Article 17 of the European General Data Protection Regulation, please proceed to the erasure of my personal data without undue delay.
@@ -55,12 +60,17 @@ Best regards, [your name]`
 			const textarea = document.querySelector('.mail')
 			textarea.select()
 			document.execCommand('copy')
+			this.success = true
 		}
 	}
 }
 </script>
 
 <style lang="scss" scoped>
+h1{
+  color: $color-secondary;
+}
+
 h4 {
   margin-bottom: 6rem;
 }
@@ -68,7 +78,12 @@ h4 {
 .btn {
   &-group > button {
     margin-right: 3rem;
+    cursor: pointer;
   }
+}
+
+a > button{
+  cursor: pointer;
 }
 
 .mail {
@@ -80,6 +95,11 @@ h4 {
   padding: 1.5rem 2rem;
   display: block;
   margin-bottom: 3rem;
+}
+
+.success{
+  color: $color-secondary;
+  margin: 2em 0 0 0;
 }
 
 </style>
