@@ -4,7 +4,7 @@
 		<h4>The infographic shows an exemplary course of your day from morning to night. Research the individual stations to find out in which situations Spotify stores which data about you. It's super easy - you just have to keep the following in mind:</h4>
 		<hr/>
 		<div class="manual">
-			<div class="step"><div class="icon icon-interactive"></div><h4>Find and collect all interactive elements. They are marked in red. It hides the data that Spotify stores about you.</h4></div>
+			<div class="step"><div class="icon icon-interactive"></div><h4>Find and collect all interactive elements. They are marked in purple. It hides the data that Spotify stores about you.</h4></div>
 			<div class="step"><div class="icon icon-popup"><span>&lt;</span><span>&sol;</span><span>&gt;</span></div><h4>After you have found an element, a popup opens. You can switch between a description and a code example.</h4></div>
 		</div>
 		<hr/>

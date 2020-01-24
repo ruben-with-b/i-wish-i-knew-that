@@ -18,10 +18,11 @@
 	{
 		"id": 2,
 		"title": "Network Quality",
-		"description": "When you're on the go even network qualities are inspected and stored. Spotify detects which generation of network you are using.",
+		"description": "When you're on the go even network qualities are inspected and stored. Furthermore Spotify detects which generation of network you are using.",
 		"data": {
 			"low_bitrate_on_cellular": true,
 			"bitrate": "32000",
+			"offline": false,
 			"cdn_64k_initial_latency": "-1",
 			"connection_type_end": "4g"
 		}
@@ -46,7 +47,7 @@
 	{
 		"id": 5,
 		"title": "Device Information",
-		"description": "The Spotify application can extract pretty much information out of the devices that are streaming the music.",
+		"description": "The Spotify application can extract pretty much information out of the devices that are streaming the music. Some of them are for example information about the CPU.",
 		"data": {
 			"mac_computer_model": "MacBookPro11,5",
 			"os_platform": "Mac",
@@ -62,7 +63,7 @@
 	{
 		"id": 6,
 		"title": "Click Interactions",
-		"description": "Spotify is able to capture and store your click interactions. It could be important for them to know which song was skipped or ad was clicked.",
+		"description": "Spotify is able to capture and store your click interactions. It could be important for them to know which song was skipped or which ad was clicked.",
 		"data": {
 			"ad_clicked": true,
 			"skipped": false,

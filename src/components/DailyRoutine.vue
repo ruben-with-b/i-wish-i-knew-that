@@ -292,7 +292,7 @@ export default {
 	}
 }
 
-.wave{
-	z-index: -1;
-}
+// .wave{
+// 	z-index: -1;
+// }
 </style>
