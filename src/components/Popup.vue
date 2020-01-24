@@ -9,15 +9,25 @@
     <span v-if="content.data" class="code-line" ref="codeLine">{{content.data}}</span>
     <span v-else>No data available – sorry for that!</span>
   </p>
-  <button class="btn-close" type="button" @click="togglePopup(content.id)">x</button>
+  <button class="btn-close" type="button" @click="togglePopup(content.id)">
+    <svg-base width="2em">
+      <close/>
+    </svg-base>
+  </button>
 </div>
 </template>
 
 <script>
 import { mapGetters, mapMutations } from 'vuex'
+import SvgBase from '@/components/svg/SvgBase.vue'
+import Close from '@/components/svg/Close.vue'
 import ShuffleText from 'shuffle-text'
 
 export default {
+	components: {
+		SvgBase,
+		Close
+	},
 	data () {
 		return {
 			description: true,
@@ -80,6 +90,8 @@ export default {
     position: absolute;
     right: 1rem;
     top: 1rem;
+    background: none;
+    border: none;
   }
 
 .btn-primary {
