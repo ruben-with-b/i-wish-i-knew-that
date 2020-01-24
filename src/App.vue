@@ -2,19 +2,24 @@
   <div id="app">
     <div id="nav">
       <ul>
-      <li><router-link id="logo" to="/">iwishiknewthat / spotify</router-link></li>
-      <!-- <li><router-link to="/">Manual</router-link></li> -->
-      <li><router-link to="/infographic">Infographic</router-link></li>
-      <li><router-link to="/solution">Reference</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
+        <li>
+          <router-link id="name" to="/">
+            <img class="logo" src="@/assets/logo.svg" alt="logo">
+            iwishiknewthat / spotify
+          </router-link>
+        </li>
+        <!-- <li><router-link to="/">Manual</router-link></li> -->
+        <li><router-link to="/infographic">Infographic</router-link></li>
+        <li><router-link to="/solution">Reference</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
       </ul>
       <div v-if="$route.name === 'infographic'">
         {{ numberOfItemsFound }} / {{ numberOfItems }}
       </div>
     </div>
-    <!-- <transition name="slide-fade" mode="out-in"> -->
+    <transition name="slide-fade" mode="out-in">
       <router-view/>
-    <!-- </transition> -->
+    </transition>
   </div>
 </template>
 
@@ -58,9 +63,14 @@ button{
 }
 
 #nav {
-  #logo {
+  #name {
     font-weight: bold;
     margin-right: 5rem;
+  }
+
+  .logo{
+    margin: 0 1em 0 0;
+    vertical-align: text-bottom;
   }
 
   background: $background;
