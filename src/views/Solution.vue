@@ -27,7 +27,7 @@ export default {
 			success: false,
 			value: `Hello,
 
-In accordance with Article 17 of the European General Data Protection Regulation, please proceed to the erasure of my personal data without undue delay.
+In accordance with Article 15 of the European General Data Protection Regulation, please proceed to the conveyance of my personal data.
 
 - Account information, including my name, date of birth, e-mail address, billing/shipping address, phone number, and stored payment card data.
 - User-generated content, which may include things such as photos, tracked activities, statistics, comments, or messages. 
