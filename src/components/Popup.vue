@@ -1,5 +1,5 @@
 <template>
-<div v-if="!getPopupById(content.id).hidden" class="popup">
+<div v-show="!getPopupById(content.id).hidden" class="popup">
   <h3>#{{ content.id + 1 }} {{ content.title }}</h3>
   <hr/>
   <button class="btn-primary left" type="button" @click="showDescription">description</button>
@@ -9,8 +9,8 @@
     <span v-if="content.data" class="code-line" ref="codeLine">{{content.data}}</span>
     <span v-else>No data available – sorry for that!</span>
   </p>
-  <button class="btn-close" type="button" @click="togglePopup(content.id)">
-    <svg-base width="2em">
+  <button class="btn-close" type="button" @click="closePopup(content.id)">
+    <svg-base width="22px" height="22px">
       <close/>
     </svg-base>
   </button>
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 import SvgBase from '@/components/svg/SvgBase.vue'
 import Close from '@/components/svg/Close.vue'
 import ShuffleText from 'shuffle-text'
@@ -53,8 +53,8 @@ export default {
 				text.start()
 			}
 		},
-		...mapMutations([
-			'togglePopup'
+		...mapActions([
+			'closePopup'
 		])
 	}
 }

@@ -1,5 +1,5 @@
 <template>
-  <svg @click="togglePopup(popupId);" :class="{ 'hide-mobile': hideMobile, 'clickable': clickable}" :width="width" :viewBox="viewbox" :style="{position: position, top: top, left: left}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg @click="clickable ? openPopup(popupId) : null" :class="{ 'hide-mobile': hideMobile, 'clickable': clickable}" :width="width" :height="height" :viewBox="viewbox" :style="{position: position, top: top, left: left}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<g :fill="fill" :stroke="stroke" :class="{ 'is-spotted': popupIsSpotted }">
 			<slot/>
 		</g>
@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
 	props: ['fill', 'stroke', 'top', 'left', 'width', 'height', 'viewbox', 'position', 'hideMobile', 'clickable', 'popupId'],
@@ -24,9 +24,8 @@ export default {
 		}
 	},
 	methods: {
-		...mapMutations([
-			'togglePopup',
-			'incrementItemsFound'
+		...mapActions([
+			'openPopup'
 		])
 	}
 }

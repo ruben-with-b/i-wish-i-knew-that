@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { EventBus } from '@/bus/event-bus.js'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
 	state: {
+		currentlyOpen: -1,
 		itemsFound: 0,
 		popups: [
 			{
@@ -76,15 +76,32 @@ export default new Vuex.Store({
 		]
 	},
 	mutations: {
-		togglePopup (state, id) {
-			if (id >= 0) {
-				state.popups[id].hidden = !state.popups[id].hidden
+		openPopup (state, id) {
+			if (state.currentlyOpen >= 0) {
+				state.popups[state.currentlyOpen].hidden = true
+				state.currentlyOpen = -1
+			}
+
+			if (state.currentlyOpen !== id) {
+				state.currentlyOpen = id
+				state.popups[id].hidden = false
 				if (!state.popups[id].spotted) {
 					state.popups[id].spotted = true
 					state.itemsFound++
-					EventBus.$emit('shift-the-wave')
 				}
 			}
+		},
+		closePopup (state, id) {
+			state.popups[state.currentlyOpen].hidden = true
+			state.currentlyOpen = -1
+		}
+	},
+	actions: {
+		openPopup (context, id) {
+			context.commit('openPopup', id)
+		},
+		closePopup (context, id) {
+			context.commit('closePopup', id)
 		}
 	},
 	getters: {

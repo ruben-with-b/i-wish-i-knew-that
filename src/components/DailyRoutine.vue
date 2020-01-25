@@ -134,7 +134,7 @@
 	<PartOfDay clock="#19:00" context="meeting friends" position="absolute"  top="67.5%" left="23%" textAlign="right" />
 	<PartOfDay clock="#22:30" context="go to sleep" position="absolute"  top="92%" left="54%" textAlign="left" />
   </div>
-  <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(index)"/>
+  <Popup v-for="(c, index) in popupContent" :key="index" :content="getPopupContentById(c.id)"/>
   <!-- <Wave class="wave"/> -->
 </div>
 </template>
