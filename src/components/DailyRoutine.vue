@@ -1,7 +1,7 @@
 <template>
 <div>
   <div class="journey">
-    <svg-base position="relative" fill="none" stroke="white" :width="widthInPercent(275)" viewbox="0 0 293 2832.7">
+    <svg-base position="relative" fill="none" stroke="white" :width="widthInPercent(275)" height="100%" viewbox="0 0 293 2832.7">
       <journey/>
     </svg-base>
     <svg-base position="absolute" fill="none" stroke="#762BFF" top="-1.8%" :width="widthInPercent(114)" viewbox="0 0 114 163" :clickable="true" :popupId="0">
