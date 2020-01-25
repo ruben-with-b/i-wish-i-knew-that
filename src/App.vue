@@ -8,7 +8,6 @@
             iwishiknewthat / spotify
           </router-link>
         </li>
-        <!-- <li><router-link to="/">Manual</router-link></li> -->
         <li><router-link to="/infographic">Infographic</router-link></li>
         <li><router-link to="/solution">Reference</router-link></li>
         <li><router-link to="/about">About</router-link></li>
